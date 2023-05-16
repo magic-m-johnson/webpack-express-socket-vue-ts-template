@@ -1,4 +1,4 @@
-# Full App template
+# Complete Application Monorepo Template
 
 This is a template monorepo for a full application, including a backend via NodeJS + Typescript  + ExpressJS + Socket.io and a frontend with Webpack + Babel + Typescript + VueJS.
 
