@@ -1,0 +1,30 @@
+{
+  "name": "socket-vue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "serve": "yarn build && yarn serve:be",
+    "start": "run-p serve:be:watch serve:fe",
+    "serve:be": "NODE_ENV=production yarn workspace backend start",
+    "serve:be:watch": "NODE_ENV=development yarn workspace backend start:watch",
+    "build": "NODE_ENV=production yarn workspace frontend webpack",
+    "serve:fe": "NODE_ENV=development yarn workspace frontend webpack serve"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.13.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  }
+}

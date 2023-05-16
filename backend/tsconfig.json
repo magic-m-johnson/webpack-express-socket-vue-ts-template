@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "module": "nodenext"
+  },
+  "ts-node": {
+    "esm": true
+  }
+}
